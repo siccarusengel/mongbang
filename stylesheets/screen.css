@@ -69,7 +69,7 @@ h1 {
 /* line 72, ../sass/screen.scss */
 .intro .left {
   position: relative;
-  height: 100vh;
+  height: 90vh;
 }
 /* line 75, ../sass/screen.scss */
 .intro .left .left-inner {
@@ -85,12 +85,12 @@ h1 {
 .intro .left .left-inner .phone {
   display: block;
   margin: auto;
-  height: 90vh;
+  height: 80vh;
 }
 /* line 91, ../sass/screen.scss */
 .intro .right {
   position: relative;
-  height: 100vh;
+  height: 90vh;
 }
 /* line 94, ../sass/screen.scss */
 .intro .right .right-inner {
@@ -117,4 +117,47 @@ h1 {
 /* line 113, ../sass/screen.scss */
 .intro .right .right-inner form input {
   margin-top: 10px;
+}
+
+.intro .center {
+  display: table;
+  margin: auto;
+}
+
+.languages {
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .field {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  #submit_button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+/*animations*/
+#submit_button {
+  background: linear-gradient(270deg, #00c6ff, #0072ff);
+  background-size: 200% 200%;
+  animation-name: submit_button;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes submit_button {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes submit_button {
+  50% {
+    background-position: 100% 50%;
+  }
 }
